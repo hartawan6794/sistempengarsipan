@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DBReadPenggunaActivity"
+    android:background="@drawable/bgapp">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/bgdetail"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/foldeer"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tcm"
+            android:text="Tambah Pengguna"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bgview"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/tvRegisMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgedlogin"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/tcm"
+            android:hint="Masukkan Email"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/tvRegisUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgedlogin"
+            android:drawableLeft="@drawable/leftperson"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:hint="Masukkan Nama Pengguna"
+            android:fontFamily="@font/tcm"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/tvRegisPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgedlogin"
+            android:drawableLeft="@drawable/leftkey"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/tcm"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:hint="Masukkan Password"/>
+        <EditText
+            android:fontFamily="@font/tcm"
+            android:id="@+id/tvPemilik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgedlogin"
+            android:drawableLeft="@drawable/leftkey"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="1"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtn"
+            android:layout_margin="10dp"
+            android:text="Tambah Pengguna"
+            android:fontFamily="@font/tcm"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtn"
+            android:layout_margin="10dp"
+            android:text="Batal"
+            android:fontFamily="@font/tcm"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Menu Utama App" />
+        <item
+            android:id="@+id/nav_arsip"
+            android:icon="@drawable/foldere"
+            android:title="Daftar Arsip" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/person"
+            android:title="Pengaturan Pengguna" />
+        <item
+            android:id="@+id/nav_ajuan"
+            android:icon="@drawable/outbox"
+            android:title="Pengajuan Surat Keluar" />
+        <item
+            android:id="@+id/nav_tentang"
+            android:icon="@drawable/ic_error_black_24dp"
+            android:title="Tentang App" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Keluar" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context=".Activity.SuratMasukActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/kategoriSurat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:padding="10dp"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/tcm"
+        android:textColor="@android:color/black"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btnCalender"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/calendar" />
+
+                        <EditText
+                            android:id="@+id/tvTanggal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/btnCalender"
+                            android:fontFamily="@font/tcm"
+                            android:hint="01 - Jan - 2000"
+                            android:textColor="@android:color/black" />
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/nomorDok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bgedlogin"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Nomor"
+                        android:padding="8dp"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080" />
+
+                    <EditText
+                        android:id="@+id/edInstansi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bgedlogin"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Instansi"
+                        android:padding="8dp"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080" />
+
+                    <EditText
+                        android:id="@+id/edAlamatInstansi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bgedlogin"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Alamat Instansi"
+                        android:padding="8dp"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080" />
+
+                    <EditText
+                        android:id="@+id/edSifat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bgedlogin"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Sifat"
+                        android:padding="8dp"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080" />
+
+                    <EditText
+                        android:id="@+id/edLampiran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bgedlogin"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Lampiran"
+                        android:padding="8dp"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080" />
+
+                    <EditText
+                        android:id="@+id/edPerihal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bgedlogin"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Perihal"
+                        android:padding="8dp"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080" />
+
+                    <EditText
+                        android:id="@+id/nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bgedlogin"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Nama Arsip"
+                        android:padding="8dp"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080" />
+
+
+                    <EditText
+                        android:id="@+id/boxArsip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bgedlogin"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Letak Box Arsip"
+                        android:padding="8dp"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080" />
+
+                    <EditText
+                        android:id="@+id/namaBoxArsip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bgedlogin"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Nama Box Arsip"
+                        android:padding="8dp"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080" />
+
+
+                    <EditText
+                        android:id="@+id/edket"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bgedlogin"
+                        android:ems="10"
+                        android:fontFamily="@font/tcm"
+                        android:hint="Deskripsi"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/file"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/tcm"
+                            android:text="File" />
+
+                        <TextView
+                            android:id="@+id/namafile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/tcm"
+                            android:text="Nama file" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.91" />
+
+                        <TextView
+                            android:id="@+id/proses"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/tcm"
+                            android:text="0%" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/uri1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/simpan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bgbtn"
+                        android:fontFamily="@font/tcm"
+                        android:text="Simpan"
+                        android:textColor="#ffff"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

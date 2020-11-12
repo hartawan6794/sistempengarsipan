@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "380531141751",
+    "firebase_url": "https://earsip-354b7.firebaseio.com",
+    "project_id": "earsip-354b7",
+    "storage_bucket": "earsip-354b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380531141751:android:76863cd035fb2c73986a72",
+        "android_client_info": {
+          "package_name": "com.cameltech.easrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380531141751-8lv3uop28jtul963dc12bqjjn9knq5lo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cameltech.easrip",
+            "certificate_hash": "349d3d04a06d33807d99e024e246b6c61a454902"
+          }
+        },
+        {
+          "client_id": "380531141751-dq9di0gj9u8t91r0kdurer2e40eko3cj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiI-5noxxBDlq_VaqmbWE9H1r43ZX9IJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380531141751-dq9di0gj9u8t91r0kdurer2e40eko3cj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

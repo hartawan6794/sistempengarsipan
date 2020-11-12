@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Amel E-Arsip</string>
+    <string name="settings_file_name">com.cameltech.earsip</string>
+    <string name="title_activity_dashboard_admin">DashboardAdmin</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="judul">Sistem Informasi Manajemen E-Arsip Berbasis Mobile</string>
+    <string name="deskripsi">Aplikasi ini dibuat sebagai tujuan untuk :\n
+- mempermudah dalam pengelolaan arsip\n
+- mempercepat dalam memperoleh informasi arsip\n
+- menampilkan informasi arsip secara detail dan tersetruktur</string>
+    <string name="tentangapp">Aplikasi ini dibuat untuk memudahkan suatu organisasi dalam manajemen suatu arsip</string>
+</resources>

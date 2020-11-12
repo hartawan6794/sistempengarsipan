@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PengaturanPenggunaActivity"
+    android:background="@drawable/bgapp">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/bgdetail"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tcm"
+            android:text="Ubah Foto"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bgview"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgedlogin"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:enabled="false"/>
+        <EditText
+            android:id="@+id/tvUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgedlogin"
+            android:drawableLeft="@drawable/leftperson"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:hint="Nama Pengguna"
+            android:fontFamily="@font/tcm"
+            android:inputType="text"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/updatePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubah Kata Sandi ?"
+            android:textSize="18sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/tcm"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtn"
+            android:layout_margin="10dp"
+            android:text="Ubat Data Pengguna"
+            android:fontFamily="@font/tcm"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtn"
+            android:layout_margin="10dp"
+            android:text="Batal"
+            android:fontFamily="@font/tcm"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
